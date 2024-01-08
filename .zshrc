@@ -1,7 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="spaceship"
-
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Add wisely, as too many plugins slow down shell startup.
@@ -47,3 +45,8 @@ export PATH="/Users/lucasfaria/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -s "/Users/lucasfaria/.scm_breeze/scm_breeze.sh" ] && source "/Users/lucasfaria/.scm_breeze/scm_breeze.sh"
+
+# use starship theme (needs to be at the end)
+eval "$(starship init zsh)"
